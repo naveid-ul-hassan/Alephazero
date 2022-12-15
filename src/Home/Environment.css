@@ -1,0 +1,116 @@
+.environment-main {
+  background-image: url("../images/bg3.svg");
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-right: 7%;
+  padding-bottom: 50px;
+}
+.environment-main {
+  display: flex;
+  justify-content: flex-end;
+}
+.environment-main .ant-card-meta-description {
+  margin-bottom: 11px;
+}
+.environment-main .card-tag {
+  display: flex;
+  border: 1px solid #1b2b38;
+}
+.environment-main .ant-card-hoverable {
+  width: 600px !important ;
+}
+.environment-main .meta-tag {
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid #00eac7;
+  padding-left: 20px;
+}
+.environment-main .ant-card .ant-card-body {
+  height: 100%;
+  width: 38%;
+  padding-left: 0;
+  color: white;
+}
+.environment-main .card-img {
+  height: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.environment-main .card-img:hover {
+  transform: scale(1.1);
+}
+.environment-main .ant-card .ant-card-meta-detail {
+  width: 100px;
+}
+.ant-card {
+  border-radius: 0px !important;
+}
+.environment-main .decript {
+  margin-top: 44px;
+  margin-left: 40px;
+}
+.environment-main .ant-card .ant-card-meta-description {
+  display: flex;
+  justify-content: end;
+  color: white;
+}
+.environment-main .ant-card .ant-card-meta {
+  height: 60% !important;
+  width: 120% !important;
+}
+.environment-main .ant-card .ant-card-meta-title {
+  white-space: normal !important;
+  color: white;
+  font-size: 23px;
+}
+
+.environment-main .ant-card .ant-card-meta {
+  height: 74px;
+}
+.environment-main .ant-card-cover {
+  width: 47%;
+
+  overflow: hidden;
+}
+.environment-main .ant-card-bordered .ant-card-cover {
+  margin-top: 0px !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+}
+
+.App {
+  text-align: start !important;
+}
+.environment-main .ant-card {
+  background-color: #14202a;
+  color: white;
+  overflow: hidden !important;
+  margin-top: 6%;
+}
+
+.environment-main .ant-card-meta:hover {
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+@keyframes example {
+  0% {
+    right: 0px;
+    top: 0px;
+  }
+  25% {
+    right: 10px;
+    top: 0px;
+  }
+}
+
+.environment-main .ant-card-body {
+  padding: 0px !important;
+  margin-top: 20px;
+  margin-left: 2%;
+}
+.environment-main .ant-card .ant-card-cover img {
+  border-radius: 0px;
+}

@@ -1,0 +1,106 @@
+.infrastructer-main {
+  display: flex;
+  justify-content: flex-end;
+}
+.infrastructer-main .card-tag {
+  display: flex;
+  border: 1px solid #1b2b38;
+}
+.infrastructer-main .ant-card-hoverable {
+  width: 600px !important ;
+}
+.infrastructer-main .meta-tag {
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid #00eac7;
+  padding-left: 20px;
+}
+.infrastructer-main .ant-card .ant-card-body {
+  height: 100%;
+  width: 38%;
+  padding-left: 0;
+  color: white;
+}
+.infrastructer-main .card-img {
+  height: 100%;
+
+  transition: 0.5s all ease-in-out;
+}
+.infrastructer-main .card-img:hover {
+  transform: scale(1.1);
+}
+.infrastructer-main .ant-card .ant-card-meta-detail {
+  width: 100px;
+}
+.infrastructer-main .decript {
+  margin-top: 45px;
+  position: relative;
+
+  width: 50% !important;
+
+  right: 0px !important;
+  margin-left: 150px;
+  padding-left: 0px;
+}
+.infrastructer-main .ant-card .ant-card-meta-description {
+  color: white;
+}
+.infrastructer-main .ant-card .ant-card-meta {
+  height: 60% !important;
+  width: 120% !important;
+}
+.infrastructer-main .ant-card .ant-card-meta-title {
+  overflow: visible !important;
+  white-space: normal !important;
+  color: white;
+  font-size: 23px;
+}
+
+.infrastructer-main .ant-card .ant-card-meta {
+  height: 74px;
+}
+.infrastructer-main .ant-card-cover {
+  width: 45%;
+
+  overflow: hidden;
+}
+.infrastructer-main .ant-card-bordered .ant-card-cover {
+  margin-top: 0px !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+}
+.infrastructer-main .App {
+  text-align: start !important;
+}
+.infrastructer-main .ant-card {
+  background-color: #14202a;
+  color: white;
+  overflow: hidden;
+  line-height: 1.2 !important;
+}
+
+.infrastructer-main .ant-card-meta:hover {
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+@keyframes example {
+  0% {
+    right: 0px;
+    top: 0px;
+  }
+  25% {
+    right: 10px;
+    top: 0px;
+  }
+}
+
+.infrastructer-main .ant-card-body {
+  padding: 0px !important;
+  margin-left: 2%;
+}
+.infrastructer-main .ant-card-meta {
+  margin: 8% !important;
+}

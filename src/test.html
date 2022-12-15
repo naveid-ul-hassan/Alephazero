@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Javascript program to get maximum xor
+        // value of two numbers in a range
+        
+        // method to get maximum xor
+        // value in range [L, R]
+        function maxXORInRange(L, R)
+        {
+            
+            // get xor of limits
+            let LXR = L ^ R;
+            
+            // loop to get msb position of L^R
+            let msbPos = 0;
+            while (LXR > 0)
+            {
+                msbPos++;
+                LXR >>= 1;
+            }
+            
+            // construct result by
+            // adding 1, msbPos times
+            let maxXOR = 0;
+            let two = 1;
+            while (msbPos -- > 0)
+            {
+                maxXOR += two;
+                two <<= 1;
+            }
+           
+            return maxXOR;
+        }
+        
+        let L = 3;
+        let R = 5;
+        
+        document.write(maxXORInRange(L, R));
+
+//         function maximumXOR(n, l, r)
+// {
+//     let x = 0;
+//     for (let i =
+//     parseInt(Math.log(r) / Math.log(2)); i >= 0; --i)
+//     {
+//         if (n & (1 << i))  // Set bit
+//         {
+//             if (x + (1 << i) - 1 < l)
+//                 x ^= (1 << i);
+//         }
+//         else // Unset bit
+//         {
+//             if ((x ^ (1 << i)) <= r)
+//                 x ^= (1 << i);
+//         }
+//     }
+//     return n ^ x;
+// }
+ 
+// // Driver Code
+//     let n = 6, l = 4, r = ;
+//     document.write("The output is " + maximumXOR(n, l, r));
+        
+    </script>
+    
+</body>
+</html>

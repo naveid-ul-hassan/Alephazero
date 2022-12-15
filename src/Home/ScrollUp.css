@@ -1,0 +1,71 @@
+.scroll-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10%;
+  background-color: #111b24;
+  height: 100vh !important;
+}
+.scroll-left {
+  width: 50%;
+  padding: 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+.scroll-left-title {
+  width: 65%;
+  color: #ffffff;
+  font-size: 35px;
+  margin-bottom: 0;
+}
+.left-title2 {
+  font-weight: 750;
+  color: #ffffff;
+}
+.scroll-left-divider {
+  border-bottom: 2px solid #01c5a5;
+  width: 10%;
+}
+
+.scroll-left-para {
+  color: #adbbc6;
+  width: 78%;
+  font-weight: 430;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.scroll-left-btn {
+  background-color: #0c3b3b;
+  padding: 14px 19px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #01c5a5;
+  font-weight: 550;
+}
+.scroll-left-btn:hover {
+  background-color: #016151;
+  cursor: pointer;
+}
+.scroll-right {
+  width: 50%;
+  overflow: hidden;
+}
+
+.scroll-card-tag {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  align-items: center;
+  background-color: #121d26;
+
+  color: white;
+  justify-content: start;
+  border: 1px solid#303d47;
+}
+
+.scroll-card {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,74 @@
+.azero-main{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    color: white;
+    background-color: #141F2A;
+    padding-left: 20px;
+    overflow: hidden;
+    
+}
+.azero-data-title-tag{
+ border-left: 2px solid red;
+ 
+}
+.azero-data-title{
+    font-weight: 350;
+    padding-left: 16px;
+    font-size: 23px;
+    margin: 0;
+
+}
+.azero-card-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+   
+}
+.azero-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-text{
+    padding-left: 15px;
+    font-size: 16px;
+}
+.azero-btn-tag{
+    background-color: #0E4445;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    margin-right: -27%;
+}
+.azero-data{
+    padding-right: 15px;
+}
+.azero-title-2{
+    font-weight: 500;
+}
+
+.azero-main:hover{
+   cursor: pointer;
+  
+   
+}
+
+.azero-btn-tag:hover{
+position: relative;
+animation-name: example;
+animation-duration: 5s ;
+animation-iteration-count: 2;
+animation-direction: alternate;  
+
+cursor: pointer;
+}
+
+@keyframes example {
+    0%   { right:0%; top:0%;}
+    25%  { right:20%; top:0%;}
+}
+
+.azero-img{
+    padding: 12px 0px;
+}

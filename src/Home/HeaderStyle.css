@@ -1,0 +1,58 @@
+.main-tag {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.headerlogo-div {
+  padding-left: 30px;
+}
+.ant-menu-submenu-popup {
+  left: 493px;
+}
+.header-btn {
+  background-color: rgb(14, 234, 201);
+  padding: 9px 30px;
+  border-radius: 23px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.header-btn:hover {
+  background-color: #7ff4e3;
+  cursor: pointer;
+}
+
+.main-header .ant-row {
+  display: flex;
+  align-items: center;
+  background-color: #111b24;
+  justify-content: space-between;
+  color: white;
+
+  padding-bottom: 55px;
+}
+.main-header .ant-menu-light {
+  justify-content: center;
+  gap: 30px;
+  background-color: #111b24;
+  font-size: 16px;
+}
+.main-header .ant-menu-title-content {
+  color: white;
+}
+.main-header .ant-menu ant-menu-sub ant-menu-vertical {
+  background-color: black;
+}
+.ant-menu-light.ant-menu-submenu > .ant-menu {
+  left: -80px;
+  position: absolute;
+  background-color: #182733;
+  color: white;
+}
+.ant-menu-light.ant-menu-submenu > .ant-menu:hover {
+  color: antiquewhite;
+}
+.main-header .ant-col-5 {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}

@@ -1,0 +1,10 @@
+.hero-main {
+  display: flex;
+  justify-content: center;
+  background-color: #111b24;
+}
+iframe {
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  width: 95%;
+}
