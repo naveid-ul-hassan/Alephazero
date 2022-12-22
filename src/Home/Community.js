@@ -1,14 +1,17 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Community.css';
-import circle from '../images/photo-circle-1.png';
+import circle from '../images/moveimg.png';
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
-
+import 'aos/dist/aos.css';
+import Aos from 'aos'
 
 function Community() {
-    
+  useEffect(()=>{
+    Aos.init({duration:1500})
+  },[])
   return (
     <div className='community-main'>
-      <div className='community-left'>
+      <div className='community-left' data-aos="fade-right">
 
       
       <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
@@ -20,7 +23,7 @@ function Community() {
 </MouseParallaxContainer>
         
       </div>
-      <div className='community-right'> 
+      <div className='community-right' data-aos="fade-left"> 
       <div className='community-right-title'>
        <p className='tittle-tag'> <span className='community'> Commnity </span> of over 100,000 people</p>
       </div>

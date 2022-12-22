@@ -1,3 +1,7 @@
+.App{
+    text-align: inherit;
+}
+
 .community-main{
     display: flex;
     flex-direction: row;

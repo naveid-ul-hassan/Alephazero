@@ -22,32 +22,32 @@ function HeroFooter() {
       </div>
       <div class="marquee-content">
         <div class="marquee-item">
-          <img className="bg-[#111B24]" src={one} alt="" />
+          <img className="marquee-img" src={one} alt="" />
         </div>
         
         <div class="marquee-item">
-          <img className="bg-[#111B24]" src={two} alt="" />
+          <img className="marquee-img" src={two} alt="" />
         </div>
         <div class="marquee-item">
-          <img className="bg-[#111B24]" src={three} alt="" />
+          <img className="marquee-img" src={three} alt="" />
         </div>
         <div class="marquee-item">
-          <img className="bg-[#111B24]" src={four} alt="" />
+          <img className="marquee-img" src={four} alt="" />
         </div>
         <div class="marquee-item">
-          <img className="bg-[#111B24]" src={five} alt="" />
+          <img className="marquee-img" src={five} alt="" />
         </div>
         <div class="marquee-item">
-          <img className="bg-[#111B24]" src={six} alt="" />
+          <img className="marquee-img" src={six} alt="" />
         </div>
         <div class="marquee-item">
-          <img className="bg-[#111B24]" src={seven} alt="" />
+          <img className="marquee-img" src={seven} alt="" />
         </div>
         <div class="marquee-item">
-          <img className="bg-[#111B24]" src={eight} alt="" />
+          <img className="marquee-img" src={eight} alt="" />
         </div>
         <div class="marquee-item">
-          <img className="bg-[#111B24]" src={nine} alt="" />
+          <img className="marquee-img" src={nine} alt="" />
         </div>
         
       </div>

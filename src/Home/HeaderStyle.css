@@ -1,7 +1,26 @@
+
+.main-tag2{
+  position: sticky !important;
+  top: -8px !important;
+  z-index: 10;
+}
+.tag-hide{
+  display: none;
+}
+
+.ant-menu-light.ant-menu-horizontal >.ant-menu-submenu::after{
+  content: none;
+}
+.main-header .ant-menu-title-content:hover{
+color: rgb(194, 194, 194);
+}
 .main-tag {
+ 
   display: flex;
   flex-direction: column;
   justify-items: center;
+  padding-left: 2%;
+    padding-right: 2%;
 }
 .headerlogo-div {
   padding-left: 30px;
@@ -54,5 +73,5 @@
 .main-header .ant-col-5 {
   display: flex;
   justify-content: flex-end;
-  padding-right: 15px;
+  /* padding-right: 13px; */
 }

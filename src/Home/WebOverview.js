@@ -1,8 +1,15 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./WebOverview.css";
+
+import 'aos/dist/aos.css';
+import Aos from 'aos'
+
 function WebOverview({ webdata }) {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
   return (
-    <div className="web-head">
+    <div className="web-head" data-aos="zoom-in">
 
       {webdata.map((item) => {
         return (

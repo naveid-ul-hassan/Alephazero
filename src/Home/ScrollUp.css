@@ -5,10 +5,12 @@
   margin-top: 10%;
   background-color: #111b24;
   height: 100vh !important;
+  align-items: center;
+  padding-bottom: 5%;
 }
 .scroll-left {
-  width: 50%;
-  padding: 7%;
+  width: 40%;
+  padding-left: 7%;
   display: flex;
   flex-direction: column;
   gap: 2%;
@@ -18,6 +20,7 @@
   color: #ffffff;
   font-size: 35px;
   margin-bottom: 0;
+  padding: 18px 0px;
 }
 .left-title2 {
   font-weight: 750;
@@ -34,6 +37,7 @@
   font-weight: 430;
   font-size: 18px;
   line-height: 1.6;
+  padding: 10px 0px;
 }
 
 .scroll-left-btn {
@@ -50,22 +54,62 @@
   cursor: pointer;
 }
 .scroll-right {
-  width: 50%;
+  width: 60%;
   overflow: hidden;
 }
 
 .scroll-card-tag {
   display: flex;
-  width: 70%;
+  width: 60%;
   flex-direction: row;
   align-items: center;
   background-color: #121d26;
 
   color: white;
   justify-content: start;
-  border: 1px solid#303d47;
+  border: 1px solid #303d47;
+  opacity: 0.3;
 }
 
 .scroll-card {
   margin-bottom: 15px;
+  display: flex !important;
+justify-content: center;
+align-items: center;
+gap: 5px;
+  
+}
+
+
+
+.scroll-card-left{
+  width: 30px;
+  height: 96px;
+  background-color: #111B24;
+  border-top: 1px solid #303d47;
+  border-right: 1px solid #303d47;
+  border-bottom: 1px solid #303d47;
+  opacity: 0.1;
+
+
+}
+.scroll-card-right{
+  width: 30px;
+  height: 96px;
+  background-color: #111B24;
+  border-top: 1px solid #303d47;
+  border-left: 1px solid #303d47;
+  border-bottom: 1px solid #303d47;
+  opacity: 0.1;
+}
+  .slick-slide.slick-center .scroll-card-tag {
+  opacity: 2;
+  color: white;
+  background-color: #14202A;
+}
+.slick-slide.slick-center .scroll-card-left{
+  opacity: 0.3;
+}
+.slick-slide.slick-center .scroll-card-right{
+  opacity: 0.3;
 }

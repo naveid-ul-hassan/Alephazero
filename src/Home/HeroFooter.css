@@ -10,7 +10,7 @@
   height: 50px;
   padding-top: 5px;
   padding-bottom: 80px;
-  animation: scrolling 20s linear infinite;
+  animation: horizenatl 10s linear infinite;
 }
 .marquee-item {
   flex: 0 0 16vw;
@@ -23,26 +23,37 @@
   width: 100%;
   width: 80%;
 }
-@keyframes scrolling {
-  0% {
+@keyframes horizenatl {
+
+  from {
     transform: translateX(0);
+
   }
-  100% {
-    transform: translatex(-144vw);
+  to{transform: translateX(-50%);
+
   }
 }
+
 .marquee-content:hover {
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
   animation-play-state: paused;
+  
 }
+
 .marquee-title {
   opacity: 1;
-  color: #485159;
+  color: #b8b8b9;
   padding-top: 10px;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 2%;
+
+}
+.marquee-img{
+  width: 62%;
+    height: 70%;
 }

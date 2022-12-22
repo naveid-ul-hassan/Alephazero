@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import {
   AppstoreOutlined,
   MailOutlined,
@@ -114,8 +114,33 @@ const Header = () => {
     console.log("click ", e);
     setCurrent(e.key);
   };
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState();
+  console.log(visible);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    console.log(currentScrollPos);
+
+    if (currentScrollPos > prevScrollPos) {
+      setVisible(false);
+    } else if (currentScrollPos < prevScrollPos) {
+      setVisible(true);
+    }
+    setPrevScrollPos(currentScrollPos);
+    console.log(visible);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
   return (
-    <div className="main-tag">
+    <div  className={prevScrollPos == 0
+      ? "main-tag"
+      : visible===true?"main-tag main-tag2"
+      : "tag-hide"}>
       <div className="main-header">
         <Row type="flex">
           <Col span={5}>

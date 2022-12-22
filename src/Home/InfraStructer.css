@@ -1,54 +1,65 @@
 .infrastructer-main {
+  background-image: url(https://alephzero.org/aleph-design/images/featured-panel-features.svg?05abcf8ee9c56ae7611bd6bb87670dac);
+  background-repeat: no-repeat;
+  background-color: #111b24;
   display: flex;
   justify-content: flex-end;
+  padding-right: 7%;
+  padding-top: 4%;
 }
 .infrastructer-main .card-tag {
   display: flex;
   border: 1px solid #1b2b38;
+  width: 50%;
+  height: 180px;
 }
-.infrastructer-main .ant-card-hoverable {
-  width: 600px !important ;
+
+.infrastructer-main .ant-card-cover {
+  width: 50%;
+  overflow: hidden;
 }
-.infrastructer-main .meta-tag {
-  width: 100%;
+
+.infrastructer-main .ant-card-body {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 18%; */
   height: 100%;
-  border-left: 2px solid #00eac7;
-  padding-left: 20px;
+  justify-content: space-between;
 }
 .infrastructer-main .ant-card .ant-card-body {
-  height: 100%;
-  width: 38%;
-  padding-left: 0;
-  color: white;
+  padding: 0px !important;
+  border-radius: 0 0 0px 0px !important;
 }
+
+.infrastructer-main .ant-card-meta-title {
+  width: 85%;
+  border-left: 2px solid #00eac7;
+  padding-left: 5%;
+}
+
+.infrastructer-main .ant-card-meta-detail {
+  padding-left: 8%;
+}
+
+
+.infrastructer-main .ant-card-meta-description {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 14%;
+  width: 130px;
+}
+
 .infrastructer-main .card-img {
   height: 100%;
-
   transition: 0.5s all ease-in-out;
 }
-.infrastructer-main .card-img:hover {
-  transform: scale(1.1);
-}
-.infrastructer-main .ant-card .ant-card-meta-detail {
-  width: 100px;
-}
-.infrastructer-main .decript {
-  margin-top: 45px;
-  position: relative;
 
-  width: 50% !important;
 
-  right: 0px !important;
-  margin-left: 150px;
-  padding-left: 0px;
-}
 .infrastructer-main .ant-card .ant-card-meta-description {
   color: white;
 }
-.infrastructer-main .ant-card .ant-card-meta {
-  height: 60% !important;
-  width: 120% !important;
-}
+
 .infrastructer-main .ant-card .ant-card-meta-title {
   overflow: visible !important;
   white-space: normal !important;
@@ -56,51 +67,47 @@
   font-size: 23px;
 }
 
-.infrastructer-main .ant-card .ant-card-meta {
-  height: 74px;
-}
-.infrastructer-main .ant-card-cover {
-  width: 45%;
-
-  overflow: hidden;
-}
-.infrastructer-main .ant-card-bordered .ant-card-cover {
-  margin-top: 0px !important;
-  margin-inline-start: 0px !important;
-  margin-inline-end: 0px !important;
-}
-.infrastructer-main .App {
-  text-align: start !important;
-}
 .infrastructer-main .ant-card {
   background-color: #14202a;
   color: white;
   overflow: hidden;
   line-height: 1.2 !important;
 }
-
-.infrastructer-main .ant-card-meta:hover {
-  position: relative;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: 2;
-  animation-direction: alternate;
-}
-@keyframes example {
-  0% {
-    right: 0px;
-    top: 0px;
-  }
-  25% {
-    right: 10px;
-    top: 0px;
-  }
+.infrastructer-main .card-bottom{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 6%;
+  align-items: flex-end;
 }
 
-.infrastructer-main .ant-card-body {
-  padding: 0px !important;
-  margin-left: 2%;
+.infrastructer-main .ant-card:hover .card-img  {
+  transform: scale(1.1);
+  
 }
-.infrastructer-main .ant-card-meta {
-  margin: 8% !important;
+.infrastructer-main .ant-card:hover .ant-card-meta-detail  {
+  padding-left: 5%;
+  transition: 0.5s all ease-in-out;
 }
+
+.bottom-tag{
+  padding-right: 1%;
+  color: #00eac7;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.bottom-tag-arrow{
+
+  color: #00eac7;
+}
+.bottom-tag .bottom-tag-arrow :hover{
+  color: #7FF3E2;
+}
+/* .infrastructer-main .card-img:hover {
+  transform: scale(1.1);
+} */
+
+/* .infrastructer-main .ant-card-meta-detail:hover {
+  padding-left: 5%;
+  transition: 0.5s all ease-in-out;
+} */

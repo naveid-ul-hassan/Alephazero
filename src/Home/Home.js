@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useEffect,useState } from "react";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
-import { ArrowRightOutlined } from "@ant-design/icons";
+//import { ArrowRightOutlined } from "@ant-design/icons";
 
 import azeroicon from "../images/azero.jpeg";
 import "./Home.css";
 import HeroFooter from "./HeroFooter";
 import WebOverview from "./WebOverview";
-import EcoSystem from "./EcoSystem";
 import NetworkUpgrade from "./NetworkUpgrade";
 import Environment from "./Environment";
 import Community from "./Community";
 import AzeroCard from "./AzeroCard";
 import ScrollUp from "./ScrollUp";
 import Foter from "./Foter";
+import Scelton from "./Scelton";
+import InfraStructer from "./InfraStructer";
+import { BsArrowRight } from "react-icons/bs";
 
 // import AutoPlay from "./AutoPlay";
+
+
 
 const Webdata = [
   { title: "0.9 sec", text: "Time to Finality" },
@@ -26,10 +30,12 @@ const Webdata = [
 ];
 
 function Home() {
+
+  
   return (
-    <div className="top-header">
+    <div  className= "top-header">
       <div className="top-header-div-1">
-        <div className="header-data">
+        <div className="header-data" >
           <div className="img-div">
             <img src={azeroicon} alt="Icon" className="header-datad-icon" />
           </div>
@@ -43,7 +49,7 @@ function Home() {
 
             <div className="learn-div">
               <p>Learn more</p>
-              <div ><ArrowRightOutlined  /></div>
+              <div className="arrow-icon" ><BsArrowRight  /></div>
             </div>
             
           
@@ -56,14 +62,19 @@ function Home() {
       <HeroFooter />
       <div className="divider-tag"></div>
       <WebOverview webdata={Webdata} />
-      <EcoSystem />
+     
+      <InfraStructer />
+      <Scelton/>
       <NetworkUpgrade />
+      <ScrollUp />
       <Environment />
       <Community />
       <AzeroCard />
-      <ScrollUp />
-      {/* <AutoPlay/> */}
+      
+      
+    
       <Foter />
+      
     </div>
   );
 }

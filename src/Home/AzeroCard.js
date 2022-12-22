@@ -1,9 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import icon1 from "../images/azero1.svg";
 import icon2 from "../images/azeroicon2.svg";
 import icon3 from "../images/azeroicon3.svg";
-import { ArrowRightOutlined } from "@ant-design/icons";
+import {BsBoxArrowUpRight } from "react-icons/bs";
 import "./AzeroCard.css";
+import 'aos/dist/aos.css';
+import Aos from 'aos'
 
 const azerodata = [
   {
@@ -35,11 +37,14 @@ const azerodata = [
   },
 ];
 function AzeroCard() {
+  useEffect(()=>{
+    Aos.init({duration:1500})
+  },[])
   return (
     <div className="azero-card-main">
       {azerodata.map((item) => {
         return (
-          <div className="azero-main">
+          <div className="azero-main" data-aos="zoom-in">
             <div className="azero-img">
               <img src={item.icon} alt={item.altr} />
             </div>
@@ -56,7 +61,7 @@ function AzeroCard() {
             </div>
             <div className="azero-btn">
               <button className="azero-btn-tag">
-                <ArrowRightOutlined />
+                <BsBoxArrowUpRight className="azero-arrow-icon"/>
                 <span className="btn-text">{item.btndata}</span>
               </button>
             </div>
