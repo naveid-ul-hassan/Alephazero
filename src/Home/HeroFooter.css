@@ -57,3 +57,10 @@
   width: 62%;
     height: 70%;
 }
+
+.marquee-content:hover .opac  {
+  opacity: 0.1 !important;
+}
+.marquee-content .opac:hover {
+  opacity: 1 !important;
+}
